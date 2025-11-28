@@ -35,7 +35,6 @@ public class CurrencyConverter extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
-            getSupportActionBar().setTitle("Currency Converter");
         }
         currencyName = getIntent().getStringExtra("currencyName");
         exchangeRate = getIntent().getDoubleExtra("exchangeRate", 0.0);

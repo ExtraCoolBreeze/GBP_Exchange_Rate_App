@@ -6,8 +6,7 @@
     <string name="currencyConverterTitle">GBP Currency Converter</string>
     <string name="mainCurrenciesHeading">Main Currencies</string>
     <string name="allCurrenciesHeading">All Currencies</string>
-    <string name="lastUpdated">Last Updated:</string>
-    <string name="lastUpdatedLoading">Last Updated: Loading exchange rates…</string>
+    <string name="lastUpdatedLoading">Last Updated: Offline</string>
     <string name="lastUpdatedFormatting">Last Updated: %1$s</string>
     <string name="searchText">Search for currency</string>
     <string name="searchButton">SEARCH</string>
