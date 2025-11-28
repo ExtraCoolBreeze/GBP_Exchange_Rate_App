@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the strings file that displays heading, button, text box etc string text-->
+<resources>
+    <string name="appName">GBP Exchange Rate Tracker</string>
+    <string name="toolbarTitle">GBP Exchange Rates</string>
+    <string name="currencyConverterTitle">GBP Currency Converter</string>
+    <string name="mainCurrenciesHeading">Main Currencies</string>
+    <string name="allCurrenciesHeading">All Currencies</string>
+    <string name="lastUpdated">Last Updated:</string>
+    <string name="lastUpdatedLoading">Last Updated: Loading exchange rates…</string>
+    <string name="lastUpdatedFormatting">Last Updated: %1$s</string>
+    <string name="searchText">Search for currency</string>
+    <string name="searchButton">SEARCH</string>
+    <string name="showAllButton">SHOW ALL</string>
+    <string name="exchangeRateFormat">1.00 GBP = %.2f %s</string>
+    <string name="legendText">Colour Shows Exchange Rate Strength:</string>
+    <string name="legendVStrong">Very Strong</string>
+    <string name="legendStrong">Strong</string>
+    <string name="legendWeak">Weak</string>
+    <string name="legendVWeak">Very Weak</string>
+    <string name="convertButton">CONVERT</string>
+    <string name="currencyName">Currency Name</string>
+    <string name="exchangeRate">£1 = X.XX</string>
+    <string name="flag">Currency flag</string>
+    <string name="converterUpdateUnavailable">Last Updated: Not available</string>
+    <string name="converterGBPToCurrency">GBP to %s</string>
+    <string name="converterCurrencyToGBP">%s to GBP</string>
+    <string name="converterResult">Conversion Result</string>
+    <string name="enterAmountText">Enter amount</string>
+    <string name="searchHelp">Please enter a search term</string>
+</resources>

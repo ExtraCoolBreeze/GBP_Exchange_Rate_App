@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This layout displays the vertical converter layout for the program -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#1976D2"
+        app:title="@string/currencyConverterTitle"
+        android:elevation="0dp"/>
+
+    <TextView
+        android:id="@+id/lastUpdatedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lastUpdatedLoading"
+        android:textSize="13sp"
+        android:textColor="#757575"
+        android:padding="6dp"
+        android:gravity="start"
+        android:background="#FFFFFF"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/currencyHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/currencyName"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/exchangeRateDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exchangeRate"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:id="@+id/conversionDirectionGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/gbpToOtherRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:minHeight="48dp"
+                    android:text="@string/converterGBPToCurrency"
+                    android:checked="true"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="12dp"/>
+
+                <RadioButton
+                    android:id="@+id/otherToGbpRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:minHeight="48dp"
+                    android:text="@string/converterCurrencyToGBP"
+                    android:textSize="14sp"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/amountInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enterAmountText"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/convertButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/convertButton"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:background="#1976D2"/>
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/converterResult"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#000000"
+                android:background="#E0E0E0"
+                android:gravity="center"
+                android:minHeight="70dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- THis is the fragment for displaying full currency list -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <ListView
+        android:id="@+id/currencyListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1dp"
+        android:background="#FFFFFF"
+        android:padding="0dp"/>
+</LinearLayout>
